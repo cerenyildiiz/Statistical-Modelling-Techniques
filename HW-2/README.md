@@ -1,1 +1,2 @@
+# HW-2
 I decided to work with air pollution data. Since there is missing data in this data, it makes sense to apply the EDA steps and then apply the statistical modeling steps. Therefore, let's start with this EDA.
