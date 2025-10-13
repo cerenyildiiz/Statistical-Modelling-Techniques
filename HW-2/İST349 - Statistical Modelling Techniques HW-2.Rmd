@@ -23,7 +23,7 @@ library("tidyr")
 ```{r}
 library(readr)
 air_quality_daily <- read_csv("air_quality_daily.csv")
-View(air_quality_daily)
+
 ```
  Also, we can look at data.
 ```{r}
