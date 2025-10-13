@@ -1,0 +1,77 @@
+---
+title: "İST349 - Statistical Modelling Techniques HW-2"
+author: "Ceren Yıldız"
+date: "2025-10-11"
+output:
+  word_document: default
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+First of all, let's install the libraries.
+```{r}
+install.packages("ggplot2")
+install.packages("tidyr")
+library("ggplot2")
+library("tidyr")
+```
+ After, we import the dataset.
+```{r}
+library(readr)
+air_quality_daily <- read_csv("air_quality_daily.csv")
+View(air_quality_daily)
+```
+ Also, we can look at data.
+```{r}
+head(air_quality_daily)
+str(air_quality_daily)
+summary(air_quality_daily)
+# # Let's check for missing values.
+colSums(is.na(air_quality_daily))
+sum(duplicated(air_quality_daily))
+# Let's convert the date column to date type.
+air_quality_daily$gun <- as.Date(air_quality_daily$gun)
+# We must convert the data to long format.
+library(tidyr)
+air_long <- pivot_longer(air_quality_daily,
+                         cols = c(CO_daily, NO2_daily),
+                         names_to = "Pollutant",
+                         values_to = "Value")
+head(air_long)
+
+# Let's perform the visualization step of CO and NO2 changes over time.
+library(ggplot2)
+ggplot(air_long, aes(x = gun, y = Value, color = Pollutant)) +
+  geom_line() +
+  labs(title = "Daily Air Quality Over Time",
+       x = "Date",
+       y = "Concentration",
+       color = "Pollutant") +
+  theme_minimal()
+
+
+
+
+#  Let's draw some histograms.
+ggplot(air_quality_daily, aes(x = CO_daily)) +
+  geom_histogram(bins = 30, fill = "lightblue", color = "black") +
+  labs(title = "Distribution of CO Levels", x = "CO_daily", y = "Frequency") +
+  theme_minimal()
+
+ggplot(air_quality_daily, aes(x = NO2_daily)) +
+  geom_histogram(bins = 30, fill = "lightpink", color = "black") +
+  labs(title = "Distribution of NO2 Levels", x = "NO2_daily", y = "Frequency") +
+  theme_minimal()
+
+
+
+
+
+```
+ 
+ 
+ 
