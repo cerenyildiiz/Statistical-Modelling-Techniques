@@ -6,13 +6,12 @@ The Air Quality dataset consists of statistical data from an air quality monitor
 
 The dataset contains 15 variables. Some of these variables are:
 
-•Date and Time: Date and time of measurement.
+o Date and Time: Date and time of measurement.
 
-•CO(GT), NMHC(GT), C6H6(GT), NOx(GT), NO2(GT): Pollutant gas values ​​measured by the official analyzer (actual reference data).
+o CO(GT), NMHC(GT), C6H6(GT), NOx(GT), NO2(GT): Pollutant gas values ​​measured by the official analyzer (actual reference data).
 
-•PT08.S1(CO), PT08.S2(NMHC), PT08.S3(NOx), PT08.S4(NO2), PT08.S5(O3): Response values ​​obtained from different MOX sensors (these sensors are sensitive to specific gases).
-
-•T, RH, AH: Temperature (°C), relative humidity (%) and absolute humidity (g/m³).
+o PT08.S1(CO), PT08.S2(NMHC), PT08.S3(NOx), PT08.S4(NO2), PT08.S5(O3): Response values ​​obtained from different MOX sensors (these sensors are sensitive to specific gases).
+o T, RH, AH: Temperature (°C), relative humidity (%) and absolute humidity (g/m³).
 
 ## Analysis Uses
 
@@ -22,6 +21,4 @@ Regression analysis (e.g., predicting CO or NO₂ levels),
 
 Time series analysis (assessing changes in air quality),
 
-Sensor temperatures (sensor systems interacting with the reference device),
 
-Machine learning (solving problems with sensor drift).
