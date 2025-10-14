@@ -19,6 +19,6 @@ This dataset is typically used in a variety of applications, such as:
 
 Regression analysis (e.g., predicting CO or NO₂ levels),
 
-Time series analysis (assessing changes in air quality),
+Time series analysis (assessing changes in air quality).
 
 
