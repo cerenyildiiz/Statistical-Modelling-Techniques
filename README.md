@@ -6,7 +6,7 @@
 
 The dataset contains 15 variables. Some of these variables are:
 
-__ ⚫ Date and Time: Date and time of measurement. __
+ ⚫ Date and Time: Date and time of measurement. 
 
  ⚫CO(GT), NMHC(GT), C6H6(GT), NOx(GT), NO2(GT): Pollutant gas values ​​measured by the official analyzer (actual reference data).
 
