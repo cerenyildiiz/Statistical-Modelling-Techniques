@@ -18,9 +18,9 @@ The dataset contains 15 variables. Some of these variables are:
 
 This dataset is typically used in a variety of applications, such as:
 
-Regression analysis (e.g., predicting CO or NO₂ levels),
+🔵 Regression analysis (e.g., predicting CO or NO₂ levels),
 
-Time series analysis (assessing changes in air quality).
+🔵 Time series analysis (assessing changes in air quality).
 
 The data link is given below.
 https://archive.ics.uci.edu/dataset/360/air+quality
