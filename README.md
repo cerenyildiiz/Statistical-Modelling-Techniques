@@ -27,4 +27,4 @@ https://archive.ics.uci.edu/dataset/360/air+quality
 
 
 You can check it out on Kaggle.
-https://www.kaggle.com/cerenyildiz
+
