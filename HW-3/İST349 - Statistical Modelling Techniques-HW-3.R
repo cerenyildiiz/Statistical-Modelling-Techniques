@@ -48,7 +48,7 @@ ggplot(mtcars2, aes(wt, mpg, color = am)) +
        x = "Weight (1000 lbs)", y = "MPG", color = "Transmission") +
   theme_minimal(base_size = 13)
 
-#  Kernal Density Plot: MPG by transmission 
+#  Kernel Density Plot: MPG by transmission 
 ggplot(mtcars2, aes(mpg, fill = am)) +
   geom_density(alpha = 0.5, color = "black") +
   labs(title = "MPG Density by Transmission Type",
@@ -323,5 +323,6 @@ BIC(m0, m1, m2, mF)
  # c)  **Normality**
   
   #d)  **No multicollinearity etc.**
+
 
 
