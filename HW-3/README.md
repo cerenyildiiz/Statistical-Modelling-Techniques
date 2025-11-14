@@ -5,6 +5,9 @@ In this assignment, we are asked to proceed with a data set ready for analysis o
 The Abalone dataset aims to predict the age of abalones, a species of marine mollusk, from their physical and morphological measurements. Since the actual age of an abalone cannot be determined directly without cutting the shell and counting the growth rings under a microscope—a destructive and labor-intensive process—the number of rings is used as a proxy variable. To approximate the biological age more realistically, researchers apply the formula Age = Rings + 1.5, where the additional 1.5 years represent the estimated time between birth and the formation of the first ring.
 
 
+
+
+
 ⚪ Age = Rings+ 1.5 
 
 https://archive.ics.uci.edu/dataset/1/abalone
